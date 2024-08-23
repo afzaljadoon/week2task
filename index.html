@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Web Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #444;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      text-align: center;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        padding: 10px;
+        border-top: 1px solid #555;
+      }
+
+      nav a:first-child {
+        border-top: none;
+      }
+    }
+
+    @media (max-width: 600px) {
+      header, footer {
+        padding: 10px 15px;
+      }
+
+      .container {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Responsive Web Page</h1>
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+  <main class="container">
+    <h2>Welcome to our website</h2>
+    <p>This is a simple, responsive webpage with a header, main content section, and footer. Resize the window to see how the layout adjusts to different screen sizes.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula cursus metus, sit amet condimentum elit scelerisque eget. Nullam euismod, nisl eget tincidunt dignissim, turpis odio dictum ligula, at dapibus ligula nisi nec urna. Donec sed pharetra leo.</p>
+  </main>
+  <footer>
+    <p>&copy; 2024 Responsive Web Page. All rights reserved.</p>
+  </footer>
+</body>
+</html>
